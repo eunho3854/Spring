@@ -1,0 +1,18 @@
+package com.cos.start.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class IndexCintroller {
+	
+	
+	//tomcat-embeded-jasper 라이브러리는 기본 경로를 /src/main/webapp
+	// prffix /views/
+	// suffic .jsp
+	
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
+}

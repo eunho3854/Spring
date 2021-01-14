@@ -1,0 +1,23 @@
+package com.cos.start.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+// @Component // 특별한 용도가 없는 객체
+// 싱글톤으로 관리 : 객체를 하나만 가질 수 있음
+// 같은 객체가 두 개 이상 있으면 찾을 수가 없기 때문임
+
+// @ResrContoller 
+@Controller
+public class IndexCintroller {
+	
+	
+	//tomcat-embeded-jasper 라이브러리는 기본 경로를 /src/main/webapp
+	// prffix /views/
+	// suffic .jsp
+	
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
+}

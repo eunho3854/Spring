@@ -1,0 +1,34 @@
+package com.cos.pserson.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
+@Controller
+public class UserController {
+	
+	@GetMapping("/user/{id}")
+	public void findById(@PathVariable int id) {
+		
+	}
+	
+	@PostMapping("/user")
+	// x - www - form - urlencoded => request.getParameter()
+	public void save(String username, String password, String phone) {
+		
+	}
+	
+	// http://localhost:8080/user/2
+	@DeleteMapping("/user/{id}")
+	public void delete(@PathVariable int id) {
+		
+	}
+	
+	@PutMapping("/user/{id}")
+	public void update() {
+		
+	}
+}
